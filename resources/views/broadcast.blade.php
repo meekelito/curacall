@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.app')
 @section('css')
 <style type="text/css">
   .form-horizontal .checkbox .checker{
