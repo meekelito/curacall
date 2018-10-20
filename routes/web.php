@@ -95,6 +95,11 @@ Route::group(['middleware' => array('auth')], function () {
 	//update account
 	Route::post('admin/update-account','Admin\AdminAccountsController@updateAccount');
 	//admin console - accounts END
+    
+    Route::get('directory','Directory\DirectoryController@index');
+	Route::get('broadcast','Broadcast\BroadcastController@index');
 
+	Route::get('archived-messages','Messages\ArchivedMessagesController@index');
+	Route::get('archived-messages/all','Messages\ArchivedMessagesController@fetchArchiveMessages');  
 
 });
