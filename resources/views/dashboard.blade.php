@@ -23,6 +23,14 @@
 		</div>
   </div>
 @endsection  
+@section('script')
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".menu-curacall li").removeClass("active");
+    $(".menu-dashboard").addClass('active');
+  }); 
+</script>
+@endsection  
 
 
 
