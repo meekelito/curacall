@@ -135,8 +135,10 @@
       "language": {
         "search": " Search : "
       }, 
-      type: "POST",
-      ajax: "{{ url('admin/client-users') }}",
+      ajax: {
+          url: '{{ url('admin/client-users') }}',
+          method: 'POST'
+      },
       columns: [
         {data: 'img', orderable: false, searchable: false},
         {data: 'curacall_id', name: 'users.id'},
