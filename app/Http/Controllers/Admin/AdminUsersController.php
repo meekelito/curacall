@@ -160,15 +160,15 @@ class AdminUsersController extends Controller
             <i class="icon-menu9"></i>
           </a> 
           <ul class="dropdown-menu dropdown-menu-right">
-            <li><a onclick="get_client_user_md('."'$id'".')"><i class="icon-pencil4"></i> Update info.</a></li>
-            <li><a onclick="get_status_md('."'$id'".')"><i class="icon-user-block"></i> Update status</a></li>
-            <li><a onclick="reset_password('."'$id'".')"><i class="icon-reset"></i> Reset password</a></li>
+            <li><a ><i class="icon-pencil4"></i> Update info.</a></li>
+            <li><a ><i class="icon-user-block"></i> Update status</a></li>
+            <li><a ><i class="icon-reset"></i> Reset password</a></li>
           </ul>
         </li>
       </ul>'; 
     })->rawColumns(['img','curacall_id','status','action'])
     ->make(true);      
-                                                                       
+
   } 
 
   public function addAdminUser(Request $request)  
