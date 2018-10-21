@@ -110,7 +110,7 @@
               @if( file_exists('storage/'.Auth::user()->prof_img) )
                 <img src="{{ asset('storage/'.Auth::user()->prof_img.'?v='.strtotime('now')) }}" alt="">
               @else
-                <img src="{{ asset('storage/app/public/upload/default.png') }}" alt="">
+                <img src="{{ asset('storage/upload/default.png') }}" alt="">
               @endif
 
 							<span>
@@ -155,7 +155,15 @@
 					<div class="sidebar-user">
 						<div class="category-content">
 							<div class="media">
-								<a href="#" class="media-left"><img src="{{ asset('storage/'.Auth::user()->prof_img.'?v='.strtotime('now')) }}" class="img-circle img-sm" alt=""></a>
+								<a href="#" class="media-left">
+                  
+                  @if( file_exists('storage/'.Auth::user()->prof_img) )
+                  <img src="{{ asset('storage/'.Auth::user()->prof_img.'?v='.strtotime('now')) }}" class="img-circle img-sm" alt="">
+                  @else
+                  <img src="{{ asset('storage/upload/default.png') }}" class="img-circle img-sm" alt="">
+                  @endif
+                </a>
+
 								<div class="media-body">
 									<span class="media-heading text-semibold">
                     @if(Auth::user())
