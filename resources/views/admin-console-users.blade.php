@@ -125,7 +125,7 @@
         {data: 'action', orderable: false, searchable: false}
       ]
     });
-    
+
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -154,7 +154,17 @@
         {data: 'account_name',name : 'b.account_name'},
         {data: 'status',name: 'users.status'},
         {data: 'action', orderable: false, searchable: false}
-      ]
+      ],
+      initComplete: function () {
+            this.api().columns().every(function () {
+                var column = this;
+                var input = document.createElement("input");
+                $(input).appendTo($(column.footer()).empty())
+                .on('change', function () {
+                    column.search($(this).val()).draw();
+                });
+            });
+        }
     });
 
 	});
