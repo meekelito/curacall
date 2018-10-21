@@ -110,7 +110,7 @@
               @if( file_exists('storage/'.Auth::user()->prof_img) )
                 <img src="{{ asset('storage/'.Auth::user()->prof_img.'?v='.strtotime('now')) }}" alt="">
               @else
-                <img src="{{ asset('storage/upload/default.png') }}" alt="">
+                <img src="{{ asset('storage/app/public/upload/default.png') }}" alt="">
               @endif
 
 							<span>
