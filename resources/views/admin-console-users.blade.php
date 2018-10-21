@@ -125,7 +125,12 @@
         {data: 'action', orderable: false, searchable: false}
       ]
     });
-
+    
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
 
     dt_client= $('.tbl-client-users').DataTable({
       responsive: true, 
