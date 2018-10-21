@@ -50,14 +50,14 @@
               <table class="table tbl-client-users" cellspacing="0" width="100%">
                 <thead>
                   <tr>
-                    <th></th><th>Curacall ID</th><th>Role</th><th>First name</th><th> Last name</th><th>Email</th><th>Account</th><th>Status</th><th>Actions</th>
+                    <th></th><th>Curacall ID</th><th>Role</th><th>First name</th><th> Last name</th><th>Email</th><th>Account</th><th>Status</th>
                   </tr>
                 </thead>
                 <tbody>
                 </tbody>
                  <tfoot>
                   <tr>
-                    <th></th><th>Curacall ID</th><th>Role</th><th>First name</th><th> Last name</th><th>Email</th><th>Account</th><th>Status</th><th>Actions</th>
+                    <th></th><th>Curacall ID</th><th>Role</th><th>First name</th><th> Last name</th><th>Email</th><th>Account</th><th>Status</th>
                   </tr>
                 </tfoot>
               </table>
@@ -144,8 +144,7 @@
         {data: 'lname', name : 'users.lname'},
         {data: 'email',name : 'users.email'},
         {data: 'account_name',name : 'b.account_name'},
-        {data: 'status',name: 'users.status'},
-        {data: 'action', orderable: false, searchable: false}
+        {data: 'status',name: 'users.status'}
       ]
     });
 
