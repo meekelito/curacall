@@ -167,7 +167,8 @@ class AdminUsersController extends Controller
         </li>
       </ul>'; 
     })->rawColumns(['img','curacall_id','status','action'])
-    ->make(true);                                                                            
+    ->make(true);      
+                                                                       
   } 
 
   public function addAdminUser(Request $request)  
