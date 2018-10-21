@@ -50,14 +50,14 @@
               <table class="table tbl-client-users" cellspacing="0" width="100%">
                 <thead>
                   <tr>
-                    <th></th><th>Curacall ID</th><th>Role</th><th>First name</th><th> Last name</th><th>Email</th><th>Account</th><th>Status</th><th>Actions</th>
+                    <th></th><th>Curacall ID</th>
                   </tr>
                 </thead>
                 <tbody>
                 </tbody>
                  <tfoot>
                   <tr>
-                    <th></th><th>Curacall ID</th><th>Role</th><th>First name</th><th> Last name</th><th>Email</th><th>Account</th><th>Status</th><th>Actions</th>
+                    <th></th><th>Curacall ID</th>
                   </tr>
                 </tfoot>
               </table>
@@ -126,27 +126,21 @@
       ]
     });
 
-    // dt_client= $('.tbl-client-users').DataTable({
-    //   responsive: true, 
-    //   processing: true,
-    //   serverSide: true,
-    //   "aaSorting": [], 
-    //   "language": {
-    //     "search": " Search : "
-    //   }, 
-    //   ajax: "{{ url('admin/client-users') }}",
-    //   columns: [
-    //     {data: 'img', orderable: false, searchable: false},
-    //     {data: 'curacall_id', name: 'users.id'},
-    //     {data: 'role_title', name : 'c.role_title'}, 
-    //     {data: 'fname', name : 'users.fname'}, 
-    //     {data: 'lname', name : 'users.lname'},
-    //     {data: 'email',name : 'users.email'},
-    //     {data: 'account_name',name : 'b.account_name'},
-    //     {data: 'status',name: 'users.status'},
-    //     {data: 'action', orderable: false, searchable: false}
-    //   ]
-    // });
+
+    dt_client= $('.tbl-client-users').DataTable({
+      responsive: true, 
+      processing: true,
+      serverSide: true,
+      "aaSorting": [], 
+      "language": {
+        "search": " Search : "
+      }, 
+      ajax: "{{ url('admin/client-users') }}",
+      columns: [
+        {data: 'img', orderable: false, searchable: false},
+        {data: 'curacall_id', name: 'users.id'}
+      ]
+    });
 
 	});
 
