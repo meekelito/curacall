@@ -18,7 +18,7 @@
   <div class="content">
   	<div class="panel panel-flat">
       <div class="panel-body">
-  			Dashboard
+  			Dashboard test
 		  </div>
 		</div>
   </div>
