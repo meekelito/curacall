@@ -127,7 +127,7 @@ class AdminUsersController extends Controller
   {   
     $users = User::leftJoin('accounts as b','users.account_id','=','b.id')
             ->leftJoin( 'roles as c','users.role_id','=','c.id' )
-            ->where('users.is_curacall',0)
+            ->where('users.is_curacall', 0)
             ->select('users.id','users.fname','users.lname','users.email','users.status','users.prof_img','b.account_name','c.role_title');
 
     return Datatables::of($users)
