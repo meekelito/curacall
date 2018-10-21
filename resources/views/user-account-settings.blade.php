@@ -96,7 +96,7 @@
               </div>
               <div class="col-lg-3"> 
                 <div style="border: 1px solid #d0d0d0; border-radius: 3px; margin-bottom: 10px; width: 250px; height: 250px;">
-                  <img id="output" src="{{ asset('storage/'.$data[0]->prof_img.'?v='.strtotime('now')) }}" style="width:250px;height:250px; border-radius: 3px;" />
+                  <img id="output" src="{{ asset('../storage/app/public/upload/default.png'.$data[0]->prof_img.'?v='.strtotime('now')) }}" style="width:250px;height:250px; border-radius: 3px;" />
                 </div>
                 <input type="file" accept="image/*"  name="image" onchange="loadFile(event)">
               </div>
