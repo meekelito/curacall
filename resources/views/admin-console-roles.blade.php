@@ -55,6 +55,8 @@
                         @endforeach
                       </select> 
                     </div>
+                    <div class="col-lg-5">
+                    </div>
                   </div>
                   <hr>
                   <table class="table tbl-client-roles" cellspacing="0" width="100%">
