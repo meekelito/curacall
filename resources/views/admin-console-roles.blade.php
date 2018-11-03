@@ -44,7 +44,6 @@
             </div>
             <div class="tab-pane" id="highlighted-justified-tab2">
               <form class="form-horizontal">
-                <div class="col-lg-12">
                   <div class="form-group form-group-lg">
                     <label class="control-label col-lg-3">Account List :</label>
                     <div class="col-lg-4">
@@ -54,8 +53,6 @@
                         <option value="{{ Crypt::encrypt($row->id) }}">{{ $row->account_name }}</option>
                         @endforeach
                       </select> 
-                    </div>
-                    <div class="col-lg-5">
                     </div>
                   </div>
                   <hr>
@@ -73,7 +70,6 @@
                       </tr>
                     </tfoot>
                   </table>
-                </div>
               </form>
             </div>
           </div>
