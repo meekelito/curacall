@@ -45,10 +45,9 @@
             <div class="tab-pane" id="highlighted-justified-tab2">
               <form class="form-horizontal">
                   <div class="form-group form-group-lg">
-                    <label class="control-label col-lg-3">Account List :</label>
                     <div class="col-lg-4">
                       <select class="form-control input-lg"  id="_account">
-                        <option value=""></option>
+                        <option value="">Select Account</option>
                         @foreach($accounts as $row)
                         <option value="{{ Crypt::encrypt($row->id) }}">{{ $row->account_name }}</option>
                         @endforeach
